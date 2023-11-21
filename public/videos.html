@@ -43,6 +43,11 @@
             <p>Lecture 6</p>
         </div>
     </div>
+    <script>
+        if (!localStorage.getItem('isLoggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
 </body>
 
 </html>
