@@ -101,7 +101,7 @@ app.get('/protected', authenticateToken, (req, res) => {
 function checkSessionTimeout(req, res, next) {
   const currentTime = Date.now();
   const lastActivityTime = req.user.lastActivity.getTime();
-  const sessionTimeout = 30 * 60 * 1000; // 30 minutes in milliseconds
+  const sessionTimeout = 3 * 1000; // 30 minutes in milliseconds
 
   if (currentTime - lastActivityTime > sessionTimeout) {
     return res.status(401).json({ message: 'Session expired. Please log in again.' });
