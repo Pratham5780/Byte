@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt');
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect('your-mongodb-connection-string', {
+mongoose.connect('mongodb+srv://khandelwalg578:MZhKWW3twS46SKMX@cluster0.jnvwlce.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
