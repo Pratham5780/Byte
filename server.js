@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Connect to MongoDB (replace 'mongodb://localhost:27017/your-database' with your MongoDB connection URL)
-mongoose.connect('mongodb://localhost:27017/CloudHR', {
+mongoose.connect('mongodb+srv://khandelwalg578:MZhKWW3twS46SKMX@cluster0.jnvwlce.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
