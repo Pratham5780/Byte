@@ -25,7 +25,11 @@
         <img src="./Image/no-update.jpeg" alt="">
         <span>No Updates available.</span>
     </div>
-
+    <script>
+        if (!localStorage.getItem('isLoggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
 
 </body>
 

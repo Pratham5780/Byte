@@ -79,7 +79,11 @@
             <a href="./Source-Codes/6thLec.html" download>Lecture 6</a>
         </div>
     </div>
-
+    <script>
+        if (!localStorage.getItem('isLoggedIn')) {
+            window.location.href = 'login.html';
+        }
+    </script>
 </body>
 
 </html>
