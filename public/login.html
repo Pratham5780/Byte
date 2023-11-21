@@ -62,6 +62,9 @@
                     });
             });
         });
+        window.addEventListener('beforeunload', function () {
+            localStorage.removeItem('isLoggedIn');
+        });
     </script>
 </body>
 
