@@ -211,7 +211,7 @@ button:hover,
     background-color: #EFEFEF;
 }
 .grid-container p{
-    font-size: 12px;
+    font-size: 16px;
 }
 .grid-container>iframe{
     width: 356px;
@@ -249,6 +249,7 @@ button:hover,
     padding: 10px 10px;
     padding-right: 50px;
     width: 280px;
+    margin: 0 auto;
 }
 .grid-source>a{
     display:flex;
@@ -293,6 +294,7 @@ footer{
     text-align: center;
     width: 27%;
     position: relative;
+    margin: 0 auto;
 }
 .question{
     margin-top: 20px;
@@ -429,6 +431,9 @@ footer{
     }
     .question>h2{
         font-size: 16px;
+    }
+    .grid-container>p{
+        font-size: 12px;
     }
     .grid-assignment>h2{
         font-size: 18px;
