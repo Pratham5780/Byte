@@ -86,6 +86,19 @@ button.active{
     cursor: pointer;
     transition: 0.3s;
 }
+#forgotPasswordForm>#otpSection>#passwordSection>button,
+#forgotPasswordForm>#otpSection>button,
+#forgotPasswordForm>button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin: 20px 0px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
 button:hover,
 .container>a>button:hover{
     background-color: #00214c;
@@ -104,6 +117,7 @@ button:hover,
     margin-top: 30px;
     margin-left: 50px;
 }
+.forgot-password-container,
 .login-container{
     width: 450px;
     min-height: 500px;
@@ -118,12 +132,18 @@ button:hover,
     padding-left: 40px;
     color: var(--blue);
 }
+.forgot-password-container>h1{
+    padding-left: 40px;
+    color: var(--blue);
+    font-size: 40px;
+}
 .login-container>p{
     padding-left: 40px;
 }
 .login-container>p>a>span{
     color: black;
 }
+.forgot-password-container>a>img,
 .login-container>a>img{
     width: 120px;
     display: block;
@@ -139,6 +159,9 @@ button:hover,
 #loginForm>button{
     align-items: flex-start;
 }
+#forgotPasswordForm>#otpSection>#passwordSection>input,
+#forgotPasswordForm>#otpSection>input,
+#forgotPasswordForm>input,
 #loginForm>input{
     width: 80%;
     padding: 15px 5px;
@@ -149,6 +172,10 @@ button:hover,
 }
 #warningMessage{
     color: red;
+}
+#fwarningMessage{
+    text-align: center;
+    padding-top: 10px;
 }
 #loginForm>a{
     color: rgb(144, 144, 144);
@@ -323,6 +350,18 @@ footer{
 .grid-assignment>.main-link>p>i{
     color: red;
 }
+#forgotPasswordForm{
+    margin-left: 40px;
+}
+#loader {
+    display: none;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+#loader.show {
+    display: inline-block;
+}
 @media only screen and (max-width: 600px){
     .nav>.right>a>img,
     .nav>.right>img{
@@ -450,3 +489,4 @@ footer{
         font-size: 14px;
     }
 }
+
