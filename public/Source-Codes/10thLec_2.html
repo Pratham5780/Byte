@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: bisque;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .item {
+            border: 2px solid blue;
+            padding: 2px 4px;
+            margin: 4px 2px;
+            background-color: aliceblue;
+        }
+
+        #pen {
+            float: left;
+            width: 20%;
+        }
+
+        #notebook {
+            float: right;
+            width: 20%;
+        }
+
+        #paper {
+            float: right;
+            width: 20%;
+            /* clear: left; */
+            /* clear: right; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my first online store</h1>
+        <div id="pen" class="item">
+            <h3>Pen</h3>
+            <p class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, excepturi quas commodi qui reiciendis
+                saepe nulla necessitatibus nihil quibusdam, adipisci, error aspernatur. Aperiam distinctio, excepturi
+                enim porro aut dolore quis magni, reiciendis, at totam quasi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam culpa vero nam impedit
+                voluptatibus expedita sequi ducimus modi nesciunt?
+                enim porro aut dolore quis magni, reiciendis, at totam quasi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam culpa vero nam impedit
+            </p>
+        </div>
+        <div id="notebook" class="item">
+            <h3>Notebook</h3>
+            <p class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, excepturi quas commodi qui reiciendis
+                saepe nulla necessitatibus nihil quibusdam, adipisci, error aspernatur. Aperiam distinctio, excepturi
+                enim porro aut dolore quis magni, reiciendis, at totam quasi?
+                saepe nulla necessitatibus nihil quibusdam, adipisci, error aspernatur. Aperiam distinctio, excepturi
+                enim porro aut dolore quis magni, reiciendis, at totam quasi?
+                saepe nulla necessitatibus nihil quibusdam, adipisci, error aspernatur. Aperiam distinctio, excepturi
+                enim porro aut dolore quis magni, reiciendis, at totam quasi?
+            </p>
+        </div>
+        <div id="paper" class="item">
+            <h3>Paper</h3>
+            <p class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, excepturi quas commodi qui reiciendis
+                saepe nulla necessitatibus nihil quibusdam, adipisci, error aspernatur. Aperiam distinctio, excepturi
+                enim porro aut dolore quis magni, reiciendis, at totam quasi?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

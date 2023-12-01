@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .div1 {
+            width: 400px;
+            height: 100px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 5px auto;
+        }
+
+        .div2 {
+            width: 400px;
+            height: 100px;
+            padding: 40px;
+            border: 1px solid red;
+            box-sizing: border-box;
+            margin: 10px auto;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            margin: 10% auto;
+            width: 50%;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Box Sizing</h1>
+        <div class="div1">
+            <p>Today we are going to learn about Box Sizing</p>
+        </div>
+        <div class="div2">
+            <p>We are enjoying our class</p>
+        </div>
+    </div>
+</body>
+
+</html>
