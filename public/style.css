@@ -276,7 +276,6 @@ button:hover,
     padding: 10px 10px;
     padding-right: 50px;
     width: 280px;
-    margin: 0 auto;
 }
 .grid-source>a{
     display:flex;
