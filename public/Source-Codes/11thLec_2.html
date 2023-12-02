@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container {
+            height: 2000px;
+        }
+
+        .static {
+            border: 1px solid red;
+            position: static;
+        }
+
+        .relative {
+            border: 1px solid blue;
+            position: relative;
+            left: 30px;
+        }
+
+        .relative2 {
+            border: 1px solid orange;
+            position: relative;
+            width: 300px;
+            height: 200px
+        }
+
+        .absolute {
+            position: absolute;
+            border: 2px solid blue;
+            bottom: 0;
+            right: 0;
+            color: orange;
+        }
+
+        .fixed {
+            border: 1px solid green;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .sticky {
+            border: 2px solid pink;
+            background-color: aliceblue;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        img {
+            width: 100%;
+            opacity: 0.3;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            font-size: 24px;
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 20px 4px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            font-size: 24px;
+            bottom: 0px;
+            right: 10px;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 24px;
+        }
+
+        .bottom-left {
+            position: absolute;
+            font-size: 24px;
+            bottom: 0px;
+            left: 10px;
+        }
+
+        .center {
+            text-align: center;
+            font-size: 24px;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Static
+    Relative
+    Fixed
+    Absolute
+    Stick -->
+    <!-- <div class="container">
+        <h2>Position Static</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores debitis architecto quae sed placeat, quasi
+            amet
+            consequatur dolore fugiat illum? Suscipit fugit quidem aspernatur eligendi soluta quasi, rerum ab. Porro
+            dolorum
+            accusamus architecto autem.</p>
+        <div class="static">
+            <p>This is my static element</p>
+        </div>
+        <div class="sticky">
+            <p>This is my stick element</p>
+        </div>
+        <h2>Position Relative</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores debitis architecto quae sed placeat, quasi
+            amet
+            consequatur dolore fugiat illum? Suscipit fugit quidem aspernatur eligendi soluta quasi, rerum ab. Porro
+            dolorum
+            accusamus architecto autem.</p>
+        <div class="relative">
+            <p>This is my relative element</p>
+        </div>
+        <div class="fixed">
+            <p>This is my Fixed element</p>
+        </div>
+        <br>
+        <div class="relative2">
+            <p>This is my relative for the absolute position</p>
+            <div class="absolute">
+                <p>This is my absolute position</p>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg"
+            alt="">
+        <div class="top-left">
+            <p>Top Left</p>
+        </div>
+        <div class="bottom-right">
+            <p>Bottom Right</p>
+        </div>
+        <div class="top-right">
+            <p>Bottom Right</p>
+        </div>
+        <div class="bottom-left">
+            <p>Bottom Left</p>
+        </div>
+        <div class="center">
+            <p>Center</p>
+        </div>
+    </div>
+</body>
+
+</html>
