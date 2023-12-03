@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .flex-container {
+            background-color: red;
+            padding: 20px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            /* Flex Start
+            Flex End
+            Center 
+            Space Around
+            Space Between
+            Space Evenly*/
+            /* justify-content: center; */
+            /* height: 400px; */
+            /* align-items: center */
+        }
+
+        .part {
+            padding: 40px;
+            background-color: aqua;
+            border: 1px solid black;
+            width: 5%;
+        }
+    </style>
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div style="order:1; flex-grow: 1;" class="part">1</div>
+        <div style="order:3; flex-grow: 1;" class="part">2</div>
+        <div style="order:4; flex-grow: 3;" class="part">3</div>
+        <div style="order:2; flex-grow: 5;" class="part">4</div>
+
+    </div>
+</body>
+
+</html>

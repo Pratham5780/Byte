@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jost', sans-serif;
+        }
+
+        .header {
+            padding: 50px;
+            text-align: center;
+            background-color: #FF78C4;
+            color: white;
+        }
+
+        .header>h1 {
+            font-size: 50px;
+        }
+
+        .header>p {
+            font-size: 30px;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+        }
+
+        .nav>ul {
+            display: flex;
+            background-color: #FFAAC9;
+            padding: 25px;
+            justify-content: center;
+        }
+
+        .nav>ul>li {
+            padding: 0px 20px;
+        }
+
+        .nav>ul>li>a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff72a6;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .nav>ul>li>a:hover {
+            background-color: #f8528f;
+        }
+
+        #left-image>img {
+            width: 100%;
+        }
+
+        #main-image>img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 25%;
+            background-color: #ffe9f1;
+            padding: 20px;
+        }
+
+        .left>h2 {
+            text-align: center;
+        }
+
+        .right>h2,
+        .right>h5 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .right {
+            flex: 65%;
+            padding: 20px;
+        }
+
+        .right>p {
+            padding: 20px 10px;
+            font-size: 18px;
+        }
+
+        .flex-image {
+            display: flex;
+            gap: 40px;
+        }
+
+        .flex-image>img {
+            width: 30%;
+        }
+
+        .footer {
+            padding: 10px;
+            background-color: #f8528f;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Pratham Electronic Store</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Electronic Store</h1>
+        <p>Welcome to our Store</p>
+    </div>
+    <div class="nav">
+        <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Items</a></li>
+            <li><a href="#">Best Product</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left">
+            <h2>Samsung LED</h2>
+            <div id="left-image" class="image">
+                <img src="https://images.samsung.com/is/image/samsung/p6pim/in/ua55cu7700klxl/gallery/in-crystal-uhd-cu7000-ua55cu7700klxl-535859806?$650_519_PNG$"
+                    alt="">
+            </div>
+            <h4>Brand new LED</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quibusdam.</p>
+        </div>
+        <div class="right">
+            <h2>Pratham Electronic Store</h2>
+            <h5>In this store you will get everything related to New Technology</h5>
+            <div id="main-image" class="image">
+                <img src="https://www.cuddlynest.com/blog/wp-content/uploads/2022/11/best-electronics-stores-in-osaka-scaled.jpg"
+                    alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio commodi, cumque dolorem ipsam
+                obcaecati est a consequatur voluptatem iure quis quod perferendis aperiam. A dolores accusantium eius,
+                molestias cum similique quaerat magni possimus aliquam amet quas magnam, repudiandae laboriosam. Aliquid
+                amet nulla illum eos commodi officiis perferendis quasi quidem aut.</p>
+            <div class="flex-image">
+                <img src="https://m.media-amazon.com/images/I/71VR6c3j2bL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/61+r3+JstZL._AC_UF1000,1000_QL80_.jpg" alt="">
+                <img src="https://www.reliancedigital.in/medias/Samsung-A14-5G-Mobile-Phone-493664920-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMTUwOXxpbWFnZS9qcGVnfGltYWdlcy9oMzIvaDEzLzk5NTE1NjExMjE4MjIuanBnfDcyOTYyNGQzYzJlNzRhY2QyMDc0ODQ0MDFjNGZjNmU2YjEzNjA1NTcyZjA4OWJkNTViODE1MWMzN2U3MmU0M2Q"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>This website is completely build by Pratham Khandelwal</p>
+    </div>
+</body>
+
+</html>
