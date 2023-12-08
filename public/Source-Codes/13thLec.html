@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin: 2px;
+        }
+
+        .grid-container {
+            display: inline-grid;
+            /* display: grid; */
+            grid-template-columns: auto auto auto;
+            /* column-gap: 50px;
+            row-gap: 100px; */
+        }
+
+        .grid1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .grid3 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .item {
+            background-color: orange;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            transition: 0.5s;
+            /* box-shadow: 10px 10px 5px rgb(185, 185, 185), 20px 20px 5px red; */
+            background-image: repeating-linear-gradient(red, yellow 10%, blue 20%);
+        }
+
+        .item:hover {
+            /* transform: translateY(10px); */
+            /* transform: rotate(360deg); */
+            /* transform: translate(10px, 20px); */
+            transform: skewY(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="grid-container">
+        <div class="grid grid1">1</div>
+        <div class="grid">2</div>
+        <div class="grid grid3">3</div>
+        <div class="grid">4</div>
+        <div class="grid">5</div>
+        <div class="grid">6</div>
+        <div class="grid">7</div>
+        <div class="grid">8</div>
+        <div class="grid">9</div>
+    </div> -->
+    <div class="tranform">
+        <div class="item">1</div>
+    </div>
+
+</body>
+
+</html>
