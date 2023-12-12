@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Lecture</title>
+    <style>
+        .content {
+            width: 300px;
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid red;
+            /* overflow: hidden; */
+            overflow: scroll;
+            /* overflow: visible; */
+            /* overflow: auto; */
+        }
+
+        .object-fit>img {
+            border: 2px solid black;
+            height: 300px;
+            width: 200px;
+            object-fit: cover;
+            object-position: 15% 20%;
+            /* object-fit: contain; */
+            /* object-fit: fill; (By default)*/
+            /* object-fit: scale-down; */
+        }
+
+        /* .element {
+            border: 2px solid blue;
+            width: 100vw;
+            height: 100vh;
+        } */
+
+        /* .flexbox>div:nth-child(odd) {
+            background-color: blue;
+        } */
+        /* .left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left>.first,
+        .left>.second,
+        .right>.third {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            margin: 2px 2px;
+        }
+
+        .flexbox {
+            display: flex;
+        } */
+        img {
+            width: 50px;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .options>ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .right>button {
+            padding: 10px 15px;
+            margin: 0 10px;
+        }
+
+        .black {
+            color: white;
+            background-color: grey;
+        }
+
+        i {
+            color: pink;
+            font-size: 20px;
+        }
+
+        .revenue {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: blue;
+            width: 400px;
+            text-align: center;
+        }
+
+        .card>img {
+            width: 200px;
+        }
+
+        .flex-practice {
+            margin-top: 200px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .right1 {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .left1>img {
+            width: 500px;
+        }
+
+        .icons {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptatem veniam dolorum consequatur commodi
+            dolorem, beatae perspiciatis vero sequi maxime aliquam rem repellat ducimus error reiciendis, doloremque qui
+            architecto alias, accusamus fuga? Nisi quos aliquam, ipsam nostrum soluta quae sunt! Cumque voluptate
+            aspernatur veniam saepe doloribus voluptatum ex maxime illo aliquam, quos autem explicabo recusandae
+            accusantium eum deleniti? Ipsam corporis est quo, sint dolore placeat dignissimos quibusdam dolorem
+            consequuntur asperiores dolores incidunt ullam perspiciatis excepturi autem provident illo temporibus
+            aspernatur inventore soluta blanditiis nisi officia facilis vero. Porro ex soluta autem deleniti qui itaque
+        </p>
+    </div>
+    <div class="object-fit">
+        <img src="https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg" alt="">
+    </div> -->
+
+    <!-- <div class="element">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur asperiores, at aliquam assumenda,
+            iure suscipit commodi autem, et optio alias! Maiores perspiciatis, aliquam officiis unde enim soluta
+            consequuntur adipisci, et, ut minima quibusdam similique veniam eveniet! Numquam reiciendis aliquid itaque
+            magnam?</p>
+    </div> -->
+    <!-- <div class="flexbox">
+        <div class="left">
+            <div class="first">1</div>
+            <div class="second">2</div>
+        </div>
+        <div class="right">
+            <div class="third">3</div>
+        </div>
+    </div> -->
+    <div class="navbar">
+        <div class="left">
+            <img src="insta.webp" alt="">
+            <div class="options">
+                <ul type="none">
+                    <li>Ola S1</li>
+                    <li>Ola Electric</li>
+                    <li>Ola Futurefactory</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <button class="black">Book an Ola Cab</button>
+            <button class="white">Free S1 Ride</button>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="revenue">
+        <div class="card">
+            <img src="Virat.jpeg" alt="">
+            <h1>250+</h1>
+            <h2>Cities covered</h2>
+            <p>Across India, Australia, New Zealand and the UK</p>
+        </div>
+        <div class="card">
+            <img src="Virat.jpeg" alt="">
+            <h1>55 Cr+</h1>
+            <h2>Yearly rides</h2>
+            <p>Booked by our customers every year</p>
+        </div>
+        <div class="card">
+            <img src="Virat.jpeg" alt="">
+            <h1>12 Cr+</h1>
+            <h2>Kilometers on S1</h2>
+            <p>Distance covered on Ola S1 scooters within a year of launch</p>
+        </div>
+    </div>
+    <div class="flex-practice">
+        <div class="left1">
+            <img src="Virat.jpeg" alt="">
+        </div>
+        <div class="right1">
+            <div class="information">
+                <h1>Postpaid + </h1>
+                <p>Buy now, pay later for all spends once a month</p>
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <img src="insta.webp" alt="">
+                    <p>Buy now, pay after 30 days</p>
+                </div>
+                <div class="icon">
+                    <img src="insta.webp" alt="">
+                    <p>Shop across 20,000 apps</p>
+                </div>
+                <div class="icon">
+                    <img src="insta.webp" alt="">
+                    <p>Credit limit upto ₹100,000
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a8cf255646.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
