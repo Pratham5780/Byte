@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JS</title>
+    <style>
+        #image {
+            width: 500px;
+        }
+
+        #bulb {
+            width: 400px;
+            height: 500px;
+        }
+
+        #id {
+            font-size: 20px;
+        }
+
+        #rectangle {
+            border: 2px solid black;
+            width: 500px;
+            height: 300px;
+            padding: 20px;
+            background-color: blue;
+            /* display: none; */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Pratham Khandelwal</h1>
+    <div id="para"></div>
+    <button
+        onclick="document.getElementById('para').innerHTML = 'Hey you clicked me and this was your first experience with JavaScript'">Click
+        Me!</button>
+    <script>
+        console.log("Pratham Khandelwal")
+    </script> -->
+    <!-- <img id="bulb" src="Light_off.png" alt="">
+    <button onclick="document.getElementById('bulb').src='Light_off.png'">Light Off</button>
+    <button onclick="document.getElementById('bulb').src='Light.png'">Light On</button> -->
+    <!-- <p id="id">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, ratione!</p>
+    <button onclick="document.getElementById('id').style.fontSize='40px'">Increase my Size</button> -->
+    <!-- <button onclick="document.getElementById('rectangle').style.display = 'block'">Who is Shubh?</button> -->
+    <div id="rectangle">Shubh is so handsome, so elegant, just looking like a WOW!</div>
+    <button onclick="shubhamInfo()">Who is Shubham?</button>
+    <script>
+        function shubhamInfo() {
+            document.getElementById('rectangle').innerHTML = 'Shubham is a student of Byte online coding classes';
+            document.getElementById('rectangle').style.backgroundColor = "black";
+            document.getElementById('rectangle').style.fontSize = "30px";
+            document.body.style.backgroundColor = "red";
+            window.alert('You have clicked this button on your own risk')
+        }
+    </script>
+</body>
+
+</html>
