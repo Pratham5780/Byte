@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="myForm" onsubmit="event.preventDefault(); submitForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="std">Std:</label>
+        <select id="std">
+            <option value="" disabled selected required>Select a value</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+        </select> <br>
+
+        <label for="section">Section:</label>
+        <select id="section">
+            <option value="" disabled selected required>Select a value</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select> <br>
+
+        <label for="school">School:</label>
+        <input type="text" id="school" required><br>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="dataTable">
+        <tr>
+            <th>Name</th>
+            <th>Std</th>
+            <th>Section</th>
+            <th>School</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
+    <script>
+        function submitForm() {
+            var naaam = document.getElementById("name").value;
+            var std = document.getElementById("std").value;
+            var section = document.getElementById("section").value;
+            var school = document.getElementById("school").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+
+            var table = document.getElementById("dataTable");
+            var newRow = table.insertRow(table.rows.length);
+
+            var cell1 = newRow.insertCell(0);
+            var cell2 = newRow.insertCell(1);
+            var cell3 = newRow.insertCell(2);
+            var cell4 = newRow.insertCell(3);
+            var cell5 = newRow.insertCell(4);
+
+            cell1.innerHTML = naaam;
+            cell2.innerHTML = std;
+            cell3.innerHTML = section;
+            cell4.innerHTML = school;
+            cell5.innerHTML = phoneNumber;
+
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</body>
+
+</html>
