@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <style>
+        .myClass {
+            border: 1px solid red;
+            width: 20%;
+        }
+
+        .active {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myClass" onclick="toggleActive(this)">
+        Button 1
+    </div>
+    <div class="myClass" onclick="toggleActive(this)">
+        Button 2
+    </div>
+    <script>
+        function toggleActive(e) {
+            e.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
