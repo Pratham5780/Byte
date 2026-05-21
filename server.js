@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -9,7 +11,13 @@ const randomstring = require('randomstring');
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://khandelwalg578:MZhKWW3twS46SKMX@cluster0.jnvwlce.mongodb.net/?retryWrites=true&w=majority', {
+const mongoUri = process.env.MONGODB_URI;
+if (!mongoUri) {
+  console.error('MONGODB_URI environment variable is required');
+  process.exit(1);
+}
+
+mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -56,6 +64,13 @@ const otpStorage = {};
 
 app.post('/forgot-password', async (req, res) => {
   const { email } = req.body;
+  const emailUser = process.env.EMAIL_USER;
+  const emailPass = process.env.EMAIL_PASS;
+
+  if (!emailUser || !emailPass) {
+    res.status(500).json({ message: 'Email service is not configured' });
+    return;
+  }
 
   try {
     const user = await User.findOne({ email });
@@ -68,8 +83,8 @@ app.post('/forgot-password', async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'sept5780@gmail.com', // your email for sending reset emails
-        pass: 'smwg wapp ffxr drah', // your email password
+        user: emailUser,
+        pass: emailPass,
       },
     });
 
@@ -81,7 +96,7 @@ app.post('/forgot-password', async (req, res) => {
     otpStorage[email] = otp; // Store the OTP temporarily
 
     const mailOptions = {
-      from: 'sept5780@gmail.com',
+      from: emailUser,
       to: email,
       subject: 'Password Reset OTP',
       html: `

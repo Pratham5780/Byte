@@ -1,17 +1,24 @@
 {
-  "name": "cloud",
+  "name": "byte-website",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Byte Online Coding Classes website",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
     "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
     "express": "^4.18.2",
     "mongoose": "^7.5.3",
     "nodemailer": "^6.9.7",
